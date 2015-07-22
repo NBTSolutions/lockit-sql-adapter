@@ -53,6 +53,7 @@ var Adapter = module.exports = function(config) {
     // login
     accountLocked: Sequelize.BOOLEAN,
     accountLockedUntil: Sequelize.DATE,
+	adminApproved: Sequelize.BOOLEAN,
     previousLoginTime: Sequelize.DATE,
     previousLoginIp: Sequelize.STRING,
     currentLoginTime: Sequelize.DATE,
