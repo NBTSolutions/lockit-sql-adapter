@@ -58,7 +58,8 @@ var Adapter = module.exports = function(config) {
     previousLoginTime: Sequelize.DATE,
     previousLoginIp: Sequelize.STRING,
     currentLoginTime: Sequelize.DATE,
-    currentLoginIp: Sequelize.STRING
+    currentLoginIp: Sequelize.STRING,
+	flo_auth: Sequelize.BOOLEAN
   }, {
     tableName: config.db.collection,   // this will define the table's name
     timestamps: false                 // this will deactivate the timestamp columns
