@@ -59,6 +59,7 @@ var Adapter = module.exports = function(config) {
     currentLoginIp: Sequelize.STRING
   }, {
     tableName: config.db.collection,   // this will define the table's name
+    schema: config.deb.schema || 'public', // we use pg. users table can be in a schema 
     timestamps: false                 // this will deactivate the timestamp columns
   });
 
